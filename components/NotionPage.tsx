@@ -25,6 +25,7 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 import { Footer } from './Footer'
 import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
+import { NotionPageFooter } from './NotionPageFooter' // NotionPageFooter をインポート
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
@@ -297,6 +298,8 @@ export function NotionPage({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
       />
+
+      <NotionPageFooter indexPageUrl='https://blog.technotut.net/' />
       {/* 本文とフッターの間にカスタムエリアを配置 */}
       <TweetButtonArea title={title} author={author} />
       {/* フッターはカスタムエリアの後に配置 */}
