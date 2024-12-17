@@ -46,20 +46,17 @@ export function PageHead({
       />
       <meta name='robots' content='index,follow' />
       <meta property='og:type' content='website' />
-
       {site && (
         <>
           <meta property='og:site_name' content={site.name} />
           <meta property='twitter:domain' content={site.domain} />
         </>
       )}
-
       {config.twitter && (
         <>
           <meta name='twitter:creator' content={`@${config.twitter}`} />
         </>
       )}
-
       {description && (
         <>
           <meta name='description' content={description} />
@@ -67,7 +64,6 @@ export function PageHead({
           <meta name='twitter:description' content={description} />
         </>
       )}
-
       {socialImageUrl ? (
         <>
           <meta name='twitter:card' content='summary_large_image' />
@@ -77,7 +73,6 @@ export function PageHead({
       ) : (
         <meta name='twitter:card' content='summary' />
       )}
-
       {url && (
         <>
           <link rel='canonical' href={url} />
@@ -85,14 +80,12 @@ export function PageHead({
           <meta property='twitter:url' content={url} />
         </>
       )}
-
       <link
         rel='alternate'
         type='application/rss+xml'
         href={rssFeedUrl}
         title={site?.name}
       />
-
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
