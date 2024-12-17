@@ -2,23 +2,23 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'dd5bc6ac79e042d0b50292564a565575',
+  rootNotionPageId: '15f8d03cada7802aabd3f9908c83798e',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'TechnoTUT Blog',
-  domain: 'blog.technotut.net',
-  author: 'TechnoTUT',
+  name: "Junkai's Blogs",
+  domain: 'localhost:3000',
+  author: 'Junkai Ji',
 
   // open graph metadata (optional)
   description: 'Next.js Notion Blog',
 
   // social usernames (optional)
-  twitter: 'toyohashitechno',
-  github: 'technotut',
+  github: 'swampholyten',
+  linkedin: 'junkai-ji-3a73bb267',
   //linkedin: '#',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL

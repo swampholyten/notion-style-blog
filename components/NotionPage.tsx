@@ -25,7 +25,6 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 import { Footer } from './Footer'
 import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
-import { NotionPageFooter } from './NotionPageFooter' // NotionPageFooter をインポート
 import { NotionPageHeader } from './NotionPageHeader'
 import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
@@ -252,15 +251,6 @@ export function NotionPage({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
 
-  //追加
-  // dynamic で named export を指定
-  const TweetButtonArea = dynamic(
-    () => import('./TweetButtonArea').then((mod) => mod.TweetButtonArea),
-    { ssr: false }
-  )
-  const author =
-    getPageProperty<string>('author', block, recordMap) || config.author
-
   return (
     <>
       <PageHead
@@ -299,10 +289,6 @@ export function NotionPage({
         pageAside={pageAside}
       />
 
-      <NotionPageFooter indexPageUrl='https://blog.technotut.net/' />
-      {/* 本文とフッターの間にカスタムエリアを配置 */}
-      <TweetButtonArea title={title} author={author} />
-      {/* フッターはカスタムエリアの後に配置 */}
       <footer className='notion-footer'>{footer}</footer>
 
       <GitHubShareButton />
