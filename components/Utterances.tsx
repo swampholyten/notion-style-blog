@@ -11,7 +11,7 @@ function Utterances({ pageId, theme }: { pageId: string; theme: string }) {
     script.id = 'utterances-script'
     script.async = true
     script.crossOrigin = 'anonymous'
-    script.setAttribute('repo', 'swampholyten/test')
+    script.setAttribute('repo', 'swampholyten/notion-style-blog')
     script.setAttribute('issue-term', 'og:title')
     script.setAttribute('theme', theme)
     script.setAttribute('label', '💬 Utterances')
