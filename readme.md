@@ -4,7 +4,7 @@
 
 ## Intro
 
-This repo is a customized version of the [Next.js Notion Starter Kit](https://github.com/transitive-bullshit/nextjs-notion-starter-kit). It has been adapted to work seamlessly with [Cloudflare Pages](https://pages.cloudflare.com/) and includes additional features, such as:
+This repo is a customized version of the [Next.js Notion Starter Kit](https://github.com/transitive-bullshit/nextjs-notion-starter-kit) by Travis Fischer. It has been adapted to work seamlessly with [Cloudflare Pages](https://pages.cloudflare.com/) and includes additional features, such as:
 
 - **Utterances Integration** for blog comments
 - **Extended configuration options**
@@ -69,7 +69,7 @@ Feel free to fork this repo and submit pull requests for any improvements or fea
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./license) file for details.
 
 ---
 
