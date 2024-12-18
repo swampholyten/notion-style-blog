@@ -280,7 +280,8 @@ export function NotionPage({
       />
 
       {pageId !== site.rootNotionPageId &&
-        pageId !== '1608d03cada7804c82d8fdf5be845d9d' && (
+        pageId !== '1608d03cada7804c82d8fdf5be845d9d' &&
+        pageId !== '15f8d03cada7813e8357dda7c9576590' && (
           <Utterances
             pageId={pageId}
             theme={isDarkMode ? 'github-dark' : 'github-light'}
