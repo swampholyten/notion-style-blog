@@ -279,12 +279,13 @@ export function NotionPage({
         pageAside={pageAside}
       />
 
-      {pageId !== site.rootNotionPageId && (
-        <Utterances
-          pageId={pageId}
-          theme={isDarkMode ? 'github-dark' : 'github-light'}
-        />
-      )}
+      {pageId !== site.rootNotionPageId &&
+        pageId !== '1608d03cada7804c82d8fdf5be845d9d' && (
+          <Utterances
+            pageId={pageId}
+            theme={isDarkMode ? 'github-dark' : 'github-light'}
+          />
+        )}
 
       <footer className='notion-footer'>{footer}</footer>
     </>
