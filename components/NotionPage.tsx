@@ -29,6 +29,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
+import Utterances from './Utterances'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -285,6 +286,14 @@ export function NotionPage({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
       />
+
+      {pageId !== site.rootNotionPageId && (
+        <Utterances
+          pageId={pageId}
+          theme={isDarkMode ? 'github-dark' : 'github-light'}
+        />
+      )}
+
       <footer className='notion-footer'>{footer}</footer>
     </>
   )

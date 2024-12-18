@@ -31,6 +31,7 @@
     "fix": "prettier '**/*.{js,jsx,ts,tsx}' --write"
   },
   "dependencies": {
+    "@emotion/styled": "^11.14.0",
     "@fisch0920/use-dark-mode": "^2.4.0",
     "@keyvhq/core": "^1.6.9",
     "@keyvhq/redis": "^1.6.10",

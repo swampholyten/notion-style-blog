@@ -21,6 +21,11 @@ body {
   overflow-x: hidden;
 }
 
+#comments,
+.utterances-frame {
+  background: var(--bg-color);
+}
+
 .static-tweet blockquote {
   margin: 0;
   margin-block-start: 0;
