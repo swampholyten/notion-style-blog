@@ -9,12 +9,13 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: "Junkai's Blogs",
+  name: "Junkai's Personal Blog",
   domain: 'junkai.org',
   author: 'Junkai Ji',
 
   // open graph metadata (optional)
-  description: "Junkai's Notion Blog",
+  description:
+    "Junkai Ji is a junior back-end web developer. He's passionate about web development and deep learning.",
 
   // social usernames (optional)
   github: 'swampholyten',
