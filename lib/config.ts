@@ -159,7 +159,6 @@ export const site: Site = {
   rootNotionSpaceId,
   description
 }
-
 export const fathomId = isDev ? null : process.env.NEXT_PUBLIC_FATHOM_ID
 export const fathomConfig = fathomId
   ? {
